@@ -2,6 +2,24 @@
 <html>
 
 <body>
+
+    <script language="javascript">
+
+        //IP address display: By http://www.Hostroute.com
+        //Script featured on JavaScript Kit (http://www.javascriptkit.com)
+
+        var ip = '<!--#echo var="REMOTE_ADDR"-->'
+
+        function ipval() {
+            document.myform.ipaddr.value = ip;
+        }
+        window.onload = ipval
+    </script>
+
+    <form method="post" action="" name="myform">
+        <input type="text" name="ipaddr" readonly>
+    </form>
+
     <h1>This isn't a picture.</h1>
     <p></p>
     <iframe style="border-radius:12px"
